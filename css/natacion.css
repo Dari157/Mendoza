@@ -107,10 +107,52 @@ li{
 .Encabezadodetabla{
 background-image: linear-gradient(grey,blue, lightgrey);
 }
-header{
-    display: flex; justify-content: space-between; align-items: center;
+iframe{
+
 }
 
-iframe{
-   
-}
+.header {  
+    display: flex;  
+    align-items: center;  
+    justify-content: space-between;  
+    padding: 20px;  
+}  
+
+.header-image {  
+    width: 20%;  
+    max-width: 200px;  
+}  
+
+.header-title {  
+    width: 60%;  
+    text-align: center;  
+}  
+
+.header-svg {  
+    width: 20%;  
+    max-width: 200px;  
+}  
+
+@media screen and (max-width: 800px) {  
+    .header {  
+        flex-direction: column;  
+        align-items: center;  
+        text-align: center;  
+    }  
+
+    .header-image {  
+        width: 50%;  
+        margin-bottom: 20px;  
+    }  
+
+    .header-title {  
+        width: 100%;  
+        margin-bottom: 20px;  
+    }  
+
+    .header-svg {  
+        width: 100%;  
+        background-color: #f0f0f0;
+        padding: 10px;  
+    }  
+}  
